@@ -12,10 +12,11 @@ function HomeScreen({ navigation }) {
     </View>
   );
 }
-function PerfilScreen() {
+function PerfilScreen({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Olá, essa é a Tela 2 com seu perfil!</Text>
+      <Button title="Ir para Casa" onPress={() => navigation.navigate('Home')} />
     </View>
   );
 }
